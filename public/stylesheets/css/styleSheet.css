@@ -1,0 +1,11 @@
+#add_wrapper{
+	margin-top: 25px;
+	width: 500px;
+}
+#home_wrapper{
+	margin-top: 50px;
+}
+.panel-heading p {
+	margin:0;
+	font-weight: bold;
+}

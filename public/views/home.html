@@ -1,0 +1,42 @@
+
+<div class="container" id="home_wrapper" ng-controller="HomeCrtl">
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p>Lastest Releases</p>
+        </div>
+
+        <div class="panel-body">
+          <div class="row show-list">
+            <div class="col-xs-4 col-md-3">
+              
+              <div ng-repeat="manga in mangaData.mangas">
+               <p class="text-left">{{manga.title}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <div class="col-md-4">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Most Popular</h4>
+        </div>
+        <div>
+          <table>
+            <tbody>
+              <tr ng-repeat="manga in mangaData.mangas">
+                <td class="text-center">{{manga.title}}</td>
+              </tr>
+            </tbody>
+          </table> 
+        </div>
+     </div> 
+
+  </div>
+
+</div>
